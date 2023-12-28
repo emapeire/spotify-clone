@@ -4,11 +4,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@pages/*": ["src/pages/*"],
-      "@icons/*": ["src/icons/*"],
-      "@lib/*": ["src/lib/*"]
+      "@/components/*": ["src/components/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/icons/*": ["src/icons/*"],
+      "@/lib/*": ["src/lib/*"]
     }
   }
 }
