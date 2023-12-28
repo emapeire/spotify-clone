@@ -1,14 +1,11 @@
 ---
-import PlaylistItemCard from '../../components/PlaylistItemCard.astro'
 import Layout from '../../layouts/Layout.astro'
 import { allPlaylists, songs } from '../../lib/data'
 
 const { id } = Astro.params
 
-const playlists = allPlaylists.find((playlist) => playlist.id === id)
-const playlistSongs = songs.filter(
-  (song) => song.albumId === playlists?.albumId
-)
+const playlist = allPlaylists.find((playlist) => playlist.id === id)
+const playlistSongs = songs.filter((song) => song.albumId === playlist?.albumId)
 ---
 
 <Layout title='Spotify Clone'>
@@ -17,11 +14,7 @@ const playlistSongs = songs.filter(
     class='relative transition duration-1000 bg-green-600'
   >
     <div class='relative z-10 px-6 pt-10'>
-      <h2 class='text-3xl font-bold'>Greetings</h2>
-
-      <div class='flex flex-wrap mt-6 gap-4'>
-        {playlists.map((playlist) => <PlaylistItemCard playlist={playlist} />)}
-      </div>
+      <div class='flex flex-wrap mt-6 gap-4'></div>
     </div>
 
     <div
