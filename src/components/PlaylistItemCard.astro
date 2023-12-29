@@ -25,10 +25,13 @@ const artistsString = artists.join(', ')
     />
   </picture>
   <div class='flex flex-auto flex-col px-2'>
-    <h4 class='text-white text-sm'>
+    <h4 class='text-white text-sm' transition:name=`playlist ${id} title`>
       {title}
     </h4>
-    <span class='text-xs text-gray-400'>
+    <span
+      class='text-xs text-gray-400'
+      transition:name=`playlist ${id} artists`
+    >
       {artistsString}
     </span>
   </div>
