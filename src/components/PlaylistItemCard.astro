@@ -18,7 +18,7 @@ const artistsString = artists.join(', ')
   transition-all duration-500 opacity-0
   group-hover:translate-y-0 group-hover:opacity-100 z-10`
   >
-    <CardPlayButton id={id} />
+    <CardPlayButton id={id} client:visible />
   </div>
 
   <a

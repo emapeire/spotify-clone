@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { Play } from '@/icons/Play'
 import { Pause } from '@/icons/Pause'
+import { usePlayerStore } from '@/store/playerStore'
 
 export function Player() {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [currentSong, setCurrentSong] = useState(null)
+  const { isPlaying, setIsPlaying, currentSong, setCurrentSong } =
+    usePlayerStore((state) => state)
   const audioRef = useRef()
 
   useEffect(() => {
