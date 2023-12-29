@@ -7,8 +7,11 @@ export function CardPlayButton({ id }) {
     usePlayerStore((state) => state)
 
   const handleClick = () => {
+    setCurrentSong({ playlist: { id } })
     setIsPlaying(!isPlaying)
   }
+
+  const isPlayingThisPlaylist = isPlaying && currentSong?.playlist.id === id
 
   return (
     <button
@@ -16,7 +19,7 @@ export function CardPlayButton({ id }) {
       onClick={handleClick}
       className='card-play-button rounded-full bg-green-500 p-4'
     >
-      {isPlaying ? <Pause /> : <Play />}
+      {isPlayingThisPlaylist ? <Pause /> : <Play />}
     </button>
   )
 }
