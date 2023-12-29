@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # VSCode-specific files
 .vscode/*
+
+# Vercel-specific files
+.vercel/*
