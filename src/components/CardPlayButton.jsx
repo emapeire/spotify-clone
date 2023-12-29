@@ -12,10 +12,20 @@ export function CardPlayButton({ id }) {
     if (isPlayingThisPlaylist) {
       setIsPlaying(false)
       return
-    } else {
-      setCurrentSong({ playlist: { id } })
-      setIsPlaying(true)
     }
+
+    fetch(`/api/get-info-playlist.json?id=${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const { songs, playlist } = data
+
+        setIsPlaying(true)
+        setCurrentSong({
+          playlist,
+          song: songs[0],
+          songs
+        })
+      })
   }
 
   return (

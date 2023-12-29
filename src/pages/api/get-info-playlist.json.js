@@ -1,3 +1,6 @@
-export async funcion GET({ params, request }) {
-  
+export async function GET({ query }) {
+  const { id } = query
+  return {
+    id
+  }
 }
