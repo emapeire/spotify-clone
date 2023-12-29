@@ -80,7 +80,7 @@ export interface Song {
   duration: string
 }
 
-export const songs: Song[] = [
+export const allSongs: Song[] = [
   {
     id: 1,
     albumId: 1,
