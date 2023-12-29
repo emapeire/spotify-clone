@@ -1,6 +1,7 @@
 ---
 import AsideMenu from '@/components/AsideMenu.astro'
 import { ViewTransitions } from 'astro:transitions'
+import { Player } from '@/components/Player.jsx'
 
 interface Props {
   title: string
@@ -28,7 +29,9 @@ const { title } = Astro.props
       <main class='[grid-area:main] rounded-lg bg-zinc-900 overflow-y-auto'>
         <slot />
       </main>
-      <footer class='[grid-area:player] min-h-[100px]'></footer>
+      <footer class='[grid-area:player] min-h-[100px]'>
+        <Player />
+      </footer>
     </div>
     <style>
       #app {
