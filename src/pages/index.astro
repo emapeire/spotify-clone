@@ -1,4 +1,5 @@
 ---
+import Greetings from '@/components/Greetings.svelte'
 import PlaylistItemCard from '@/components/PlaylistItemCard.astro'
 import Layout from '@/layouts/Layout.astro'
 import { playlists } from '@/lib/data'
@@ -10,7 +11,7 @@ import { playlists } from '@/lib/data'
     class='relative transition-all duration-1000 bg-green-600'
   >
     <div class='relative z-10 px-6 pt-12'>
-      <h2 class='text-4xl font-bold'>Greetings</h2>
+      <Greetings />
 
       <div class='flex flex-wrap mt-6 gap-4'>
         {playlists.map((playlist) => <PlaylistItemCard playlist={playlist} />)}
