@@ -39,7 +39,7 @@ const playlistSongs = songs.filter((song) => song.albumId === playlist?.albumId)
               <span>{playlist?.artists.join(', ')}</span>
             </div>
             <p class='mt-1'>
-              <span class='text-white'>{playlistSongs.length} songs</span>
+              <span class='text-white'>{playlistSongs?.length} songs</span>
             </p>
           </div>
         </div>
