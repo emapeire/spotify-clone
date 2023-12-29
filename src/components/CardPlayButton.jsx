@@ -10,7 +10,8 @@ export function CardPlayButton({ id }) {
 
   const handleClick = () => {
     if (isPlayingThisPlaylist) {
-      setIsPlaying(!isPlaying)
+      setIsPlaying(false)
+      return
     } else {
       setCurrentSong({ playlist: { id } })
       setIsPlaying(true)
