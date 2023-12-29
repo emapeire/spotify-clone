@@ -51,14 +51,6 @@ export const playlists: Playlist[] = [
     color: colors.purple,
     cover: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['Chau Saura', 'amies', 'kyu']
-  },
-  {
-    id: '6',
-    albumId: 6,
-    title: 'Like a Necessity',
-    color: colors.orange,
-    cover: 'https://f4.bcbits.com/img/a0363730459_16.jpg',
-    artists: ['WFS', 'Nadav Cohen']
   }
 ]
 
