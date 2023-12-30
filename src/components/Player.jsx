@@ -39,7 +39,10 @@ const VolumeControl = () => {
 
   return (
     <div className='flex justify-center gap-x-2 text-white'>
-      <button onClick={handleClickVolume}>
+      <button
+        className='opacity-70 hover:opacity-100 transition'
+        onClick={handleClickVolume}
+      >
         {isVolumenSilence ? <VolumeSilence /> : <Volume />}
       </button>
 
