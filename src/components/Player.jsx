@@ -23,6 +23,7 @@ const CurrentSong = ({ image, title, artists }) => {
 
 const VolumeControl = () => {
   const volume = usePlayerStore((state) => state.volume)
+  const setVolume = usePlayerStore((state) => state.setVolume)
 
   return (
     <div className='flex justify-center gap-x-2 text-white'>
