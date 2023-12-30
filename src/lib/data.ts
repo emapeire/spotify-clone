@@ -219,7 +219,7 @@ export const allSongs: Song[] = [
   {
     id: 1,
     albumId: 4,
-    title: 'Lunar',
+    title: 'Starry Reflections',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -228,7 +228,7 @@ export const allSongs: Song[] = [
   {
     id: 2,
     albumId: 4,
-    title: 'Go go go!',
+    title: 'Energize and Excel',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -237,7 +237,7 @@ export const allSongs: Song[] = [
   {
     id: 3,
     albumId: 4,
-    title: 'Keep focus!',
+    title: 'Concentration Groove',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -246,7 +246,7 @@ export const allSongs: Song[] = [
   {
     id: 4,
     albumId: 4,
-    title: 'JavaScript is the way',
+    title: 'Code Harmony',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -255,7 +255,7 @@ export const allSongs: Song[] = [
   {
     id: 5,
     albumId: 4,
-    title: 'No more TypeScript for me',
+    title: 'Syntax Serenity',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Tenno'],
     album: 'Study Session',
@@ -264,7 +264,7 @@ export const allSongs: Song[] = [
   {
     id: 1,
     albumId: 5,
-    title: 'Moonlit Walk',
+    title: 'Twilight Promenade',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['LoFi Dreamer'],
     album: 'Chill Lo-Fi Music',
@@ -273,7 +273,7 @@ export const allSongs: Song[] = [
   {
     id: 2,
     albumId: 5,
-    title: 'Coffee Daze',
+    title: 'Espresso Reverie',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['LoFi Dreamer'],
     album: 'Chill Lo-Fi Music',
@@ -282,7 +282,7 @@ export const allSongs: Song[] = [
   {
     id: 3,
     albumId: 5,
-    title: 'Skyline Serenade',
+    title: 'Horizon Melody',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['LoFi Dreamer'],
     album: 'Chill Lo-Fi Music',
@@ -291,7 +291,7 @@ export const allSongs: Song[] = [
   {
     id: 4,
     albumId: 5,
-    title: 'Urban Echoes',
+    title: 'City Whispers',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['LoFi Dreamer'],
     album: 'Chill Lo-Fi Music',
@@ -300,7 +300,7 @@ export const allSongs: Song[] = [
   {
     id: 5,
     albumId: 5,
-    title: "Night's End",
+    title: "Dawn's Arrival",
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['LoFi Dreamer'],
     album: 'Chill Lo-Fi Music',
