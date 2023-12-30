@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Play } from '@/icons/Play'
 import { Pause } from '@/icons/Pause'
 import { usePlayerStore } from '@/store/playerStore'
+import { Slider } from './Slider'
 
 export const CurrentSong = ({ image, title, artists }) => {
   return (
@@ -9,7 +10,8 @@ export const CurrentSong = ({ image, title, artists }) => {
       <picture className='w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden'>
         <img src={image} alt={title} />
       </picture>
-      <div className='flex flex-col gap-2'>
+
+      <div className='flex flex-col'>
         <h3 className='font-semibold text-sm block'>{title}</h3>
         <span className='text-xs opacity-80'>{artists?.join(', ')}</span>
       </div>
@@ -54,7 +56,18 @@ export function Player() {
         </div>
       </div>
 
-      <div className='grid place-content-center'>Volume Controls...</div>
+      <div className='grid place-content-center'>
+        <Slider
+          defaultValue={[100]}
+          max={100}
+          step={0}
+          className='w-[95px]'
+          onValueChange={(value) => {
+            const [newVolume] = value
+            audioRef.current.volume = newVolume / 100
+          }}
+        />
+      </div>
     </div>
   )
 }
