@@ -35,14 +35,16 @@ const SongController = ({ audio }) => {
     setCurrentTime(audio.current.currentTime)
   }
 
+  const duration = audio?.current?.duration ?? 0
+
   return (
     <div className='flex flex-col items-center'>
-      <span>00:00</span>
+      <span>{currentTime}</span>
 
       <Slider
         defaultValue={[0]}
         value={[currentTime]}
-        max={audio?.current?.duration ?? 0}
+        max={duration}
         min={0}
         className='w-[500px]'
         onValueChange={(value) => {
@@ -50,7 +52,7 @@ const SongController = ({ audio }) => {
         }}
       />
 
-      <span>00:00</span>
+      <span>{duration}</span>
     </div>
   )
 }
@@ -134,6 +136,7 @@ export function Player() {
           <button className='bg-white rounded-full p-2' onClick={handleClick}>
             {isPlaying ? <Pause /> : <Play />}
           </button>
+          <SongController />
           <audio ref={audioRef} />
         </div>
       </div>
