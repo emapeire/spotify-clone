@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Play } from '@/icons/Play'
 import { Pause } from '@/icons/Pause'
 import { usePlayerStore } from '@/store/playerStore'
-import { Slider } from './Slider'
+import { Slider } from '@/components/Slider'
 
 export const CurrentSong = ({ image, title, artists }) => {
   return (
