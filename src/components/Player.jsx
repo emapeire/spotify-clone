@@ -54,9 +54,10 @@ const SongController = ({ audio }) => {
         value={[currentTime]}
         max={duration}
         min={0}
-        className='w-[500px]'
+        className='w-[425px]'
         onValueChange={(value) => {
-          audio.current.currentTime = value
+          const [newCurrentTime] = value
+          audio.current.currentTime = newCurrentTime
         }}
       />
 
