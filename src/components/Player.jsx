@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Play } from '@/icons/Play'
 import { Pause } from '@/icons/Pause'
 import { usePlayerStore } from '@/store/playerStore'
@@ -17,6 +17,40 @@ const CurrentSong = ({ image, title, artists }) => {
         <h3 className='font-semibold text-sm block'>{title}</h3>
         <span className='text-xs opacity-80'>{artists?.join(', ')}</span>
       </div>
+    </div>
+  )
+}
+
+const SongController = ({ audio }) => {
+  const [currentTime, setCurrentTime] = useState(0)
+
+  useEffect(() => {
+    audio.current.addEventListener('timeupdate', handleTimeUpdate)
+    return () => {
+      audio.current.removeEventListener('timeupdate', handleTimeUpdate)
+    }
+  }, [])
+
+  const handleTimeUpdate = () => {
+    setCurrentTime(audio.current.currentTime)
+  }
+
+  return (
+    <div className='flex flex-col items-center'>
+      <span>00:00</span>
+
+      <Slider
+        defaultValue={[0]}
+        value={[currentTime]}
+        max={audio?.current?.duration ?? 0}
+        min={0}
+        className='w-[500px]'
+        onValueChange={(value) => {
+          audio.current.currentTime = value
+        }}
+      />
+
+      <span>00:00</span>
     </div>
   )
 }
