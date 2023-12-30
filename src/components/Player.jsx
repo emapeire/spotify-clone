@@ -4,9 +4,9 @@ import { Pause } from '@/icons/Pause'
 import { usePlayerStore } from '@/store/playerStore'
 import { Slider } from '@/components/Slider'
 
-export const CurrentSong = ({ image, title, artists }) => {
+const CurrentSong = ({ image, title, artists }) => {
   return (
-    <div className={`flex items-center gap-5 relative overflow-hidden`}>
+    <div className='flex items-center gap-5 relative overflow-hidden'>
       <picture className='w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden'>
         <img src={image} alt={title} />
       </picture>
@@ -60,11 +60,14 @@ export function Player() {
         <Slider
           defaultValue={[100]}
           max={100}
-          step={0}
+          min={0}
+          // value={[volume * 100]}
           className='w-[95px]'
           onValueChange={(value) => {
             const [newVolume] = value
             audioRef.current.volume = newVolume / 100
+            // const volumeValue = newVolume / 100
+            // setVolume(volumeValue)
           }}
         />
       </div>
