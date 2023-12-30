@@ -136,7 +136,7 @@ export function Player() {
           <button className='bg-white rounded-full p-2' onClick={handleClick}>
             {isPlaying ? <Pause /> : <Play />}
           </button>
-          <SongController />
+          <SongController audio={audioRef} />
           <audio ref={audioRef} />
         </div>
       </div>
