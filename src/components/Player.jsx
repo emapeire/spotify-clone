@@ -3,6 +3,8 @@ import { Play } from '@/icons/Play'
 import { Pause } from '@/icons/Pause'
 import { usePlayerStore } from '@/store/playerStore'
 import { Slider } from '@/components/Slider'
+import { VolumeSilence } from '@/icons/VolumeSilence'
+import { Volume } from '@/icons/Volume'
 
 const CurrentSong = ({ image, title, artists }) => {
   return (
@@ -19,22 +21,47 @@ const CurrentSong = ({ image, title, artists }) => {
   )
 }
 
+const VolumeControl = () => {
+  const volume = usePlayerStore((state) => state.volume)
+
+  return (
+    <div className='flex justify-center gap-x-2 text-white'>
+      {volume < 0.1 ? <VolumeSilence /> : <Volume />}
+
+      <Slider
+        defaultValue={[100]}
+        max={100}
+        min={0}
+        className='w-[95px]'
+        onValueChange={(value) => {
+          const [newVolume] = value
+          const volumeValue = newVolume / 100
+          setVolume(volumeValue)
+        }}
+      />
+    </div>
+  )
+}
+
 export function Player() {
-  const { isPlaying, setIsPlaying, currentSong, setCurrentSong } =
+  const { isPlaying, setIsPlaying, currentSong, setCurrentSong, volume } =
     usePlayerStore((state) => state)
   const audioRef = useRef()
-  const volumeRef = useRef(1)
 
   useEffect(() => {
     isPlaying ? audioRef.current.play() : audioRef.current.pause()
   }, [isPlaying])
 
   useEffect(() => {
+    audioRef.current.volume = volume
+  }, [volume])
+
+  useEffect(() => {
     const { song, songs, playlist } = currentSong
     if (song) {
       const src = `music/${playlist?.id}/0${song.id}.mp3`
       audioRef.current.src = src
-      audioRef.current.volume = volumeRef.current
+      audioRef.current.volume = volume
       audioRef.current.play()
     }
   }, [currentSong])
@@ -59,18 +86,7 @@ export function Player() {
       </div>
 
       <div className='grid place-content-center'>
-        <Slider
-          defaultValue={[100]}
-          max={100}
-          min={0}
-          className='w-[95px]'
-          onValueChange={(value) => {
-            const [newVolume] = value
-            const volumeValue = newVolume / 100
-            volumeRef.current = volumeValue
-            audioRef.current.volume = volumeValue
-          }}
-        />
+        <VolumeControl />
       </div>
     </div>
   )
