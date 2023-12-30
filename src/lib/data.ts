@@ -222,7 +222,7 @@ export const allSongs: Song[] = [
     title: 'Starry Reflections',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Cosmic Composer'],
-    album: 'Study Session',
+    album: 'Cosmic Melodies',
     duration: '3:40'
   },
   {
@@ -231,7 +231,7 @@ export const allSongs: Song[] = [
     title: 'Energize and Excel',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Cosmic Composer'],
-    album: 'Study Session',
+    album: 'Cosmic Melodies',
     duration: '3:20'
   },
   {
@@ -240,7 +240,7 @@ export const allSongs: Song[] = [
     title: 'Concentration Groove',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Cosmic Composer'],
-    album: 'Study Session',
+    album: 'Cosmic Melodies',
     duration: '2:40'
   },
   {
@@ -249,7 +249,7 @@ export const allSongs: Song[] = [
     title: 'Code Harmony',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Cosmic Composer'],
-    album: 'Study Session',
+    album: 'Cosmic Melodies',
     duration: '3:10'
   },
   {
@@ -258,7 +258,7 @@ export const allSongs: Song[] = [
     title: 'Syntax Serenity',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
     artists: ['Cosmic Composer'],
-    album: 'Study Session',
+    album: 'Cosmic Melodies',
     duration: '2:10'
   },
   {
@@ -267,7 +267,7 @@ export const allSongs: Song[] = [
     title: 'Twilight Promenade',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['Melodic Minds'],
-    album: 'Chill Lo-Fi Music',
+    album: 'Evening Harmonies',
     duration: '3:12'
   },
   {
@@ -276,7 +276,7 @@ export const allSongs: Song[] = [
     title: 'Espresso Reverie',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['Melodic Minds'],
-    album: 'Chill Lo-Fi Music',
+    album: 'Evening Harmonies',
     duration: '4:07'
   },
   {
@@ -285,7 +285,7 @@ export const allSongs: Song[] = [
     title: 'Horizon Melody',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['Melodic Minds'],
-    album: 'Chill Lo-Fi Music',
+    album: 'Evening Harmonies',
     duration: '3:50'
   },
   {
@@ -294,7 +294,7 @@ export const allSongs: Song[] = [
     title: 'City Whispers',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['Melodic Minds'],
-    album: 'Chill Lo-Fi Music',
+    album: 'Evening Harmonies',
     duration: '3:30'
   },
   {
@@ -303,7 +303,7 @@ export const allSongs: Song[] = [
     title: "Dawn's Arrival",
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
     artists: ['Melodic Minds'],
-    album: 'Chill Lo-Fi Music',
+    album: 'Evening Harmonies',
     duration: '4:20'
   }
 ]
