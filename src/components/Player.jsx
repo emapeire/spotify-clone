@@ -9,17 +9,19 @@ export function Player() {
   const audioRef = useRef()
 
   useEffect(() => {
-    audioRef.current.src = `/music/1/01.mp3`
-  }, [])
+    isPlaying ? audioRef.current.play() : audioRef.current.pause()
+  }, [isPlaying])
+
+  useEffect(() => {
+    const { song, songs, playlist } = currentSong
+    if (song) {
+      const src = `music/${playlist?.id}/0${song.id}.mp3`
+      audioRef.current.src = src
+      audioRef.current.play()
+    }
+  }, [currentSong])
 
   const handleClick = () => {
-    if (isPlaying) {
-      audioRef.current.pause()
-    } else {
-      audioRef.current.play()
-      audioRef.current.volume = 0.5
-    }
-
     setIsPlaying(!isPlaying)
   }
 

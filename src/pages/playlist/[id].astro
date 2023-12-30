@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import { allPlaylists, songs } from '../../lib/data'
+import { allPlaylists, allSongs } from '../../lib/data'
 
 const { id } = Astro.params
 
 const playlist = allPlaylists.find((playlist) => playlist.id === id)
-const playlistSongs = songs.filter((song) => song.albumId === playlist?.albumId)
+const playlistSongs = allSongs.filter(
+  (song) => song.albumId === playlist?.albumId
+)
 ---
 
 <Layout title='Spotify Clone'>
