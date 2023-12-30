@@ -221,7 +221,7 @@ export const allSongs: Song[] = [
     albumId: 4,
     title: 'Starry Reflections',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
-    artists: ['Tenno'],
+    artists: ['Cosmic Composer'],
     album: 'Study Session',
     duration: '3:40'
   },
@@ -230,7 +230,7 @@ export const allSongs: Song[] = [
     albumId: 4,
     title: 'Energize and Excel',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
-    artists: ['Tenno'],
+    artists: ['Cosmic Composer'],
     album: 'Study Session',
     duration: '3:20'
   },
@@ -239,7 +239,7 @@ export const allSongs: Song[] = [
     albumId: 4,
     title: 'Concentration Groove',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
-    artists: ['Tenno'],
+    artists: ['Cosmic Composer'],
     album: 'Study Session',
     duration: '2:40'
   },
@@ -248,7 +248,7 @@ export const allSongs: Song[] = [
     albumId: 4,
     title: 'Code Harmony',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
-    artists: ['Tenno'],
+    artists: ['Cosmic Composer'],
     album: 'Study Session',
     duration: '3:10'
   },
@@ -257,7 +257,7 @@ export const allSongs: Song[] = [
     albumId: 4,
     title: 'Syntax Serenity',
     image: 'https://f4.bcbits.com/img/a1962013209_16.jpg',
-    artists: ['Tenno'],
+    artists: ['Cosmic Composer'],
     album: 'Study Session',
     duration: '2:10'
   },
@@ -266,7 +266,7 @@ export const allSongs: Song[] = [
     albumId: 5,
     title: 'Twilight Promenade',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
-    artists: ['LoFi Dreamer'],
+    artists: ['Melodic Minds'],
     album: 'Chill Lo-Fi Music',
     duration: '3:12'
   },
@@ -275,7 +275,7 @@ export const allSongs: Song[] = [
     albumId: 5,
     title: 'Espresso Reverie',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
-    artists: ['LoFi Dreamer'],
+    artists: ['Melodic Minds'],
     album: 'Chill Lo-Fi Music',
     duration: '4:07'
   },
@@ -284,7 +284,7 @@ export const allSongs: Song[] = [
     albumId: 5,
     title: 'Horizon Melody',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
-    artists: ['LoFi Dreamer'],
+    artists: ['Melodic Minds'],
     album: 'Chill Lo-Fi Music',
     duration: '3:50'
   },
@@ -293,7 +293,7 @@ export const allSongs: Song[] = [
     albumId: 5,
     title: 'City Whispers',
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
-    artists: ['LoFi Dreamer'],
+    artists: ['Melodic Minds'],
     album: 'Chill Lo-Fi Music',
     duration: '3:30'
   },
@@ -302,7 +302,7 @@ export const allSongs: Song[] = [
     albumId: 5,
     title: "Dawn's Arrival",
     image: 'https://f4.bcbits.com/img/a2793859494_16.jpg',
-    artists: ['LoFi Dreamer'],
+    artists: ['Melodic Minds'],
     album: 'Chill Lo-Fi Music',
     duration: '4:20'
   }
