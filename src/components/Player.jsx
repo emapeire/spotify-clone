@@ -40,7 +40,7 @@ const SongController = ({ audio }) => {
 
     const minutes = Math.floor(time / 60)
     const seconds = Math.floor(time % 60)
-    return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`
   }
 
   const duration = audio?.current?.duration ?? 0
