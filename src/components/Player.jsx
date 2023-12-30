@@ -24,16 +24,31 @@ const CurrentSong = ({ image, title, artists }) => {
 const VolumeControl = () => {
   const volume = usePlayerStore((state) => state.volume)
   const setVolume = usePlayerStore((state) => state.setVolume)
+  const prevVolumeRef = useRef(volume)
+
+  const isVolumenSilence = volume < 0.1
+
+  const handleClickVolume = () => {
+    if (isVolumenSilence) {
+      setVolume(prevVolumeRef.current)
+    } else {
+      prevVolumeRef.current = volume
+      setVolume(0)
+    }
+  }
 
   return (
     <div className='flex justify-center gap-x-2 text-white'>
-      {volume < 0.1 ? <VolumeSilence /> : <Volume />}
+      <button onClick={handleClickVolume}>
+        {isVolumenSilence ? <VolumeSilence /> : <Volume />}
+      </button>
 
       <Slider
         defaultValue={[100]}
         max={100}
         min={0}
         className='w-[95px]'
+        value={[volume * 100]}
         onValueChange={(value) => {
           const [newVolume] = value
           const volumeValue = newVolume / 100
