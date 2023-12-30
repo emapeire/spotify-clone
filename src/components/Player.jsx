@@ -47,7 +47,7 @@ const SongController = ({ audio }) => {
 
   return (
     <div className='flex gap-x-3 text-xs pt-2'>
-      <span className='opacity-50 w-12 text-right'>
+      <span className='opacity-50 w-10 text-right'>
         {formatTime(currentTime)}
       </span>
 
@@ -63,7 +63,9 @@ const SongController = ({ audio }) => {
         }}
       />
 
-      <span className='opacity-50 w-12 text-left'>{formatTime(duration)}</span>
+      <span className='opacity-50 w-10 text-left'>
+        {duration ? formatTime(duration) : null}
+      </span>
     </div>
   )
 }
