@@ -38,7 +38,7 @@ const SongController = ({ audio }) => {
   const duration = audio?.current?.duration ?? 0
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex gap-x-3'>
       <span>{currentTime}</span>
 
       <Slider
@@ -132,7 +132,7 @@ export function Player() {
       </div>
 
       <div className='grid place-content-center gap-4 flex-1'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center flex-col items-center'>
           <button className='bg-white rounded-full p-2' onClick={handleClick}>
             {isPlaying ? <Pause /> : <Play />}
           </button>
