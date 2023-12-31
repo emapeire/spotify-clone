@@ -1,5 +1,7 @@
 # Spotify Clone with Astro + React + Svelte + TailwindCSS
 
+![Spotify Clone](https://github.com/emapeire/spotify-clone/assets/63935846/156deb09-cc4a-480b-ba8b-5168194373a9)
+
 This is a Spotify clone built with [Astro](https://astro.build), [React](https://reactjs.org), [Svelte](https://svelte.dev), and [TailwindCSS](https://tailwindcss.com).
 
 ## Getting Started
