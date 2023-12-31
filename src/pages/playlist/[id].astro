@@ -2,6 +2,7 @@
 import SongsTable from '@/components/SongsTable.astro'
 import Layout from '../../layouts/Layout.astro'
 import { allPlaylists, allSongs } from '../../lib/data'
+import { CardPlayButton } from '@/components/CardPlayButton'
 
 const { id } = Astro.params
 
@@ -48,6 +49,10 @@ const playlistSongs = allSongs.filter(
         </div>
       </div>
     </header>
+
+    <div class='pl-6 pt-6'>
+      <CardPlayButton id={id} client:load size='large' />
+    </div>
 
     <div class='relative z-10 px-6 pt-10'></div>
 
