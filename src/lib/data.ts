@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import { colors } from './colors'
 
 export interface Playlist {
