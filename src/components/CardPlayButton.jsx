@@ -1,3 +1,4 @@
+/* eslint-disable multiline-ternary */
 import { Play } from '@/icons/Play'
 import { Pause } from '@/icons/Pause'
 import { usePlayerStore } from '@/store/playerStore'
