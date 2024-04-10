@@ -1,7 +1,7 @@
 /* eslint-disable multiline-ternary */
-import { Play } from '@/icons/Play'
-import { Pause } from '@/icons/Pause'
-import { usePlayerStore } from '@/store/playerStore'
+import { Play } from '../icons/Play'
+import { Pause } from '../icons/Pause'
+import { usePlayerStore } from '../store/playerStore'
 
 export function CardPlayButton({ id, size = 'small' }) {
 	const { isPlaying, setIsPlaying, currentSong, setCurrentSong } = usePlayerStore((state) => state)

@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
-import { Play } from '@/icons/Play'
-import { Pause } from '@/icons/Pause'
-import { usePlayerStore } from '@/store/playerStore'
-import { Slider } from '@/components/Slider'
-import { VolumeSilence } from '@/icons/VolumeSilence'
-import { Volume } from '@/icons/Volume'
+import { Play } from '../icons/Play'
+import { Pause } from '../icons/Pause'
+import { usePlayerStore } from '../store/playerStore'
+import { Slider } from '../components/Slider'
+import { VolumeSilence } from '../icons/VolumeSilence'
+import { Volume } from '../icons/Volume'
 
 const CurrentSong = ({ image, title, artists }) => {
 	return (
